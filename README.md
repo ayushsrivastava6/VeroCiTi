@@ -1,5 +1,3 @@
-<p align="center"><img src="frontend/public/verociti-logo.jpg" width="160" alt="VeROCiTI logo"></p>
-
 <p align="center">
   <img src="frontend/public/verociti-logo.jpg" alt="VeROCiTI logo" width="150">
 </p>
