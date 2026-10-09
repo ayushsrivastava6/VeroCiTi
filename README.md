@@ -56,21 +56,29 @@ The repository brings together several connected workstreams:
 -->
 
 <p align="center">
-  <em>📸 Physical prototype photo slot — add <code>docs/showcase/physical-prototype.jpg</code> and uncomment the image markup above.</em>
+  <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/bdcccaa7-d14d-4cb9-8212-83259cfd3c30" />
+  <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/861bd2c5-28a6-4944-9dbb-565f1fbf334f" />
+
+
 </p>
 
-*Suggested photos: a wide shot of the complete board, a top-down view showing the junctions and LED signals, and a close-up of the Arduino wiring/vehicle setup.*
+
 
 ### Japan Day exhibition
 
-<!-- PHOTO SLOT
+ PHOTO SLOT
 1. Add your photo to: docs/showcase/japan-day-showcase.jpg
 2. Replace the placeholder below with:
    <p align="center"><img src="docs/showcase/japan-day-showcase.jpg" alt="VeROCiTI being demonstrated at Japan Day" width="900"></p>
--->
+
 
 <p align="center">
-  <em>📸 Japan Day showcase photo slot — add <code>docs/showcase/japan-day-showcase.jpg</code> and uncomment the image markup above.</em>
+  <img width="1220" height="812" alt="image" src="https://github.com/user-attachments/assets/8cd3ec77-3f37-48a1-be58-15272634dce8" />
+  <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/457892fc-8729-4563-901c-2dba0b7160b0" />\
+  <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3507cda7-4e8c-46e1-905a-2e02f9613ec4" />
+
+
+
 </p>
 
 *Suggested photos: the team presenting the system, the full exhibition setup, and a photo showing the dashboard and physical model together.*
