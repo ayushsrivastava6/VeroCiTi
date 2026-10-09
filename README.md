@@ -66,12 +66,6 @@ The repository brings together several connected workstreams:
 
 ### Japan Day exhibition
 
- PHOTO SLOT
-1. Add your photo to: docs/showcase/japan-day-showcase.jpg
-2. Replace the placeholder below with:
-   <p align="center"><img src="docs/showcase/japan-day-showcase.jpg" alt="VeROCiTI being demonstrated at Japan Day" width="900"></p>
-
-
 <p align="center">
   <img width="1220" height="812" alt="image" src="https://github.com/user-attachments/assets/8cd3ec77-3f37-48a1-be58-15272634dce8" />
   <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/457892fc-8729-4563-901c-2dba0b7160b0" />\
