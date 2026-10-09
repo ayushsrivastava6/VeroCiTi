@@ -1,0 +1,37 @@
+/* Slide-out navigation panel: hidden off the left edge until opened from the top bar's menu button. */
+.sidebar { position:fixed; top:0; left:0; bottom:0; z-index:50000; width:min(280px, 86vw); background:var(--bg); border-right:1px solid var(--border); display:flex; flex-direction:column; padding:16px 12px; gap:4px; overflow-y:auto; transform:translateX(-100%); visibility:hidden; transition:transform 0.2s ease, visibility 0s linear 0.2s, box-shadow 0.2s ease; }
+.sidebar.open { transform:none; visibility:visible; box-shadow:var(--shadow-lg); transition:transform 0.2s ease, visibility 0s, box-shadow 0.2s ease; }
+.sb-backdrop { position:fixed; inset:0; z-index:49999; background:rgba(12,11,10,0.5); backdrop-filter:blur(2px); opacity:0; pointer-events:none; transition:opacity 0.2s ease; }
+.sb-backdrop.open { opacity:1; pointer-events:auto; }
+@media (prefers-reduced-motion: reduce) { .sidebar, .sidebar.open, .sb-backdrop { transition:none; } }
+
+.sb-logo { display:flex; align-items:center; gap:10px; padding-bottom:14px; border-bottom:1px solid var(--border); margin-bottom:8px; }
+.sb-close-btn { margin-left:auto; width:30px; height:30px; border-radius:var(--radius-sm); border:1px solid var(--border); background:transparent; color:var(--text2); display:flex; align-items:center; justify-content:center; transition:var(--transition); }
+.sb-close-btn:hover { border-color:var(--text3); color:var(--text); }
+.sb-logo-img { width:34px; height:34px; border-radius:50%; object-fit:cover; flex-shrink:0; background:#fff; display:block; }
+.sb-logo-name { font-size:1.15rem; font-weight:700; color:var(--text); letter-spacing:-0.01em; line-height:1; }
+.sb-logo-name span { color:var(--blue); }
+.sb-status { display:flex; align-items:center; gap:6px; font-size:0.65rem; font-weight:500; color:var(--green); padding:6px 10px; background:var(--green-dim); border:1px solid rgba(99,163,117,0.2); border-radius:var(--radius-sm); margin-bottom:8px; }
+.sb-status-dot { width:6px; height:6px; border-radius:50%; background:var(--green); animation:pulse-dot 2s infinite; }
+.sb-firebase-badge { margin-left:auto; font-size:0.58rem; font-weight:700; color:#dba53a; background:rgba(219,165,58, 0.15); border:1px solid rgba(219,165,58, 0.35); padding:1px 5px; border-radius:4px; letter-spacing:0.3px; display:inline-flex; align-items:center; }
+@keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.sb-nav { display:flex; flex-direction:column; gap:2px; }
+.sb-nav-btn { display:flex; align-items:center; gap:10px; width:100%; padding:9px 12px; border-radius:var(--radius-sm); background:transparent; color:var(--text2); font-size:0.83rem; font-weight:500; transition:var(--transition); border:1px solid transparent; position:relative; }
+.sb-nav-btn i { width:16px; font-size:0.85rem; }
+.sb-nav-btn:hover { background:var(--surface); color:var(--text); }
+.sb-nav-btn.active { background:var(--blue-dim); color:var(--blue); border-color:rgba(217,119,87,0.25); }
+.sb-nav-btn.active i { color:var(--blue); }
+.sb-badge { margin-left:auto; background:var(--red); color:#fff; font-size:0.6rem; font-weight:700; padding:1px 6px; border-radius:99px; min-width:18px; text-align:center; }
+.sb-section { margin-top:auto; }
+.sb-stats { display:flex; flex-direction:column; gap:6px; padding:12px; background:var(--surface); border-radius:var(--radius); border:1px solid var(--border); margin-bottom:8px; }
+.sb-stat-row { display:flex; justify-content:space-between; align-items:center; }
+.sb-stat-label { font-size:0.68rem; color:var(--text3); }
+.sb-stat-val { font-size:0.75rem; font-weight:600; }
+.sb-stat-val.green { color:var(--green); }
+.sb-stat-val.amber { color:var(--amber); }
+.sb-stat-val.red   { color:var(--red);   }
+.sb-stat-val.blue  { color:var(--blue);  }
+.sb-clock { padding:12px; background:var(--surface); border-radius:var(--radius); border:1px solid var(--border); text-align:center; }
+.sb-clock-time { font-size:1.4rem; font-weight:700; color:var(--text); letter-spacing:0.05em; font-variant-numeric:tabular-nums; }
+.sb-clock-date { font-size:0.65rem; color:var(--text2); margin-top:3px; }
+.sb-clock-city { font-size:0.6rem; color:var(--text3); margin-top:2px; text-transform:uppercase; letter-spacing:0.08em; }

@@ -1,0 +1,22 @@
+Flask>=3.0.0
+Werkzeug>=3.0.0
+numpy>=1.24.0
+requests>=2.31.0
+gunicorn>=21.2.0
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+scikit-learn>=1.3.0
+pytesseract>=0.3.10
+ultralytics>=8.0.0
+easyocr>=1.7.0
+flask-cors>=4.0.0
+pyserial>=3.5          # USB link to the physical board's Arduino Nanos
+
+# Local AI engine (colab_verociti_gpu.py run on this machine by start.bat)
+fastapi>=0.110.0
+uvicorn>=0.29.0
+python-multipart>=0.0.9
+
+# Vision-language model for make/model, damage and clothing recognition
+transformers>=4.40.0
+huggingface_hub>=0.23.0

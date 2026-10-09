@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: velociti
+    runtime: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: RENDER
+        value: "1"
+      - key: TEAM_MEMBERS
+        sync: false
